@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contact Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<<<<<<< HEAD
+    <link rel="stylesheet" type="text/css" href="../static/styles/home.css">
+    <link rel="stylesheet" type="text/css" href="../static/styles/contact.css">
+=======
+    <link rel= "stylesheet" type= "text/css" href= "../static/styles/home.css">
+    <link rel= "stylesheet" type= "text/css" href= "../static/styles/contact.css">
+>>>>>>> cb540f35b5af7c50a79d21e741748fae23f00c96
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+<<<<<<< HEAD
+<div class="w3-top">
+    <div class="w3-bar w3-black w3-card" id="myNavbar">
+        <a href="{{ url_for('home_page') }}" class="w3-bar-item w3-button w3-wide">LOGO</a>
+        <div class="w3-right w3-hide-small">
+            <a href="{{ url_for('about_page') }}" class="w3-bar-item w3-button"><i class="fa fa-info-circle"></i> SOBRE
+            </a>
+            <a href="{{ url_for('prices_page') }}" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> PREÇOS </a>
+            <a href="{{ url_for('contact_page') }}" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTATO
+            </a>
+            <a href="{{ url_for('login_page') }}" class="w3-bar-item w3-button"><i class="fa fa-sign-in"></i> SIGN-IN
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="w3-container w3-dark-grey" style="padding:128px 16px" id="contact">
+    <div class="w3-row-padding w3-light-gray" style="margin-top:64px">
+        <div class="w3-half w3-section">
+            <h3 class="w3-center">CONTACT</h3>
+            <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
+            <div style="margin-top:48px">
+                <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> São Paulo, BR</p>
+                <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p>
+                <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p>
+                <br>
+                <form target="_blank" action="/criarContato" method="post">
+                    <p><input class="w3-input w3-border" id="name" type="text" placeholder="Name" required name="name">
+                    </p>
+                    <p><input class="w3-input w3-border" id="email" type="text" placeholder="Email" required
+                              name="email"></p>
+                    <p><input class="w3-input w3-border" id="subject" type="text" placeholder="Subject" required
+                              name="subject"></p>
+                    <p><input class="w3-input w3-border" id="message" type="text" placeholder="Message" required
+                              name="message"></p>
+                    <p>
+                        <button class="w3-button w3-black" type="submit">
+                            <i class="fa fa-paper-plane"></i> SEND MESSAGE
+                        </button>
+                    </p>
+                </form>
+            </div>
+=======
+    <div class="w3-top">
+      <div class="w3-bar w3-black w3-card" id="myNavbar">
+        <a href="{{ url_for('home_page') }}" class="w3-bar-item w3-button w3-wide">LOGO</a>
+        <div class="w3-right w3-hide-small">
+          <a href="{{url_for('about_page')}}" class="w3-bar-item w3-button"><i class="fa fa-info-circle"></i> SOBRE </a>
+          <a href="{{ url_for('prices_page') }}" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> PREÇOS </a>
+          <a href="{{ url_for('contact_page') }}" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTATO </a>
+          <a href="{{ url_for('login_page') }}" class="w3-bar-item w3-button"><i class="fa fa-sign-in"></i> SIGN-IN </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-container w3-dark-grey" style="padding:128px 16px" id="contact">
+    <div class="w3-row-padding w3-light-gray" style="margin-top:64px">
+        <div class="w3-half w3-section">
+          <h3 class="w3-center">CONTACT</h3>
+          <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
+          <div style="margin-top:48px">
+            <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> São Paulo, BR</p>
+            <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p>
+            <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p>
+            <br>
+            <form target="_blank" action="/criarContato" method="post">
+              <p><input class="w3-input w3-border" id="name" type="text" placeholder="Name" required name="name"></p>
+              <p><input class="w3-input w3-border" id="email" type="text" placeholder="Email" required name="email"></p>
+              <p><input class="w3-input w3-border" id="subject" type="text" placeholder="Subject" required name="subject"></p>
+              <p><input class="w3-input w3-border" id="message" type="text" placeholder="Message" required name="message"></p>
+              <p>
+                <button class="w3-button w3-black" type="submit">
+                  <i class="fa fa-paper-plane"></i> SEND MESSAGE
+                </button>
+              </p>
+            </form>
+          </div>
+>>>>>>> cb540f35b5af7c50a79d21e741748fae23f00c96
+        </div>
+        <div class="w3-half w3-section">
+            <img class="w3-image w3-greyscale center" alt="" src="/static/bookshelves.jpg">
+        </div>
+<<<<<<< HEAD
+    </div>
+</div>
+
+<footer class="w3-center w3-black w3-padding-64">
+    <div class="w3-xlarge w3-section">
+=======
+      </div>
+    </div>
+
+    <footer class="w3-center w3-black w3-padding-64">
+      <div class="w3-xlarge w3-section">
+>>>>>>> cb540f35b5af7c50a79d21e741748fae23f00c96
+        <i class="fa fa-facebook-official w3-hover-opacity"></i>
+        <i class="fa fa-instagram w3-hover-opacity"></i>
+        <i class="fa fa-snapchat w3-hover-opacity"></i>
+        <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+        <i class="fa fa-twitter w3-hover-opacity"></i>
+        <i class="fa fa-linkedin w3-hover-opacity"></i>
+<<<<<<< HEAD
+    </div>
+    <p class="w3-small">Copyright © 2022 Test Inc. Todos os direitos reservados.</p>
+</footer>
+=======
+      </div>
+     <p class="w3-small">Copyright © 2022 Test Inc. Todos os direitos reservados.</p>
+    </footer>
+>>>>>>> cb540f35b5af7c50a79d21e741748fae23f00c96
+</body>
+</html>
