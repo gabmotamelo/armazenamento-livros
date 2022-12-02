@@ -1,4 +1,3 @@
-
 from flask import Flask, render_template, request, redirect, session
 from flask_sqlalchemy import SQLAlchemy
 from credenciais import segredos
@@ -72,7 +71,7 @@ def signup_page():
 
 @app.route('/autenticar', methods=['POST', ])
 def autenticar():
-    if 'alohomora' == request.form['psw']:
+    if request.form[''] == request.form['psw']:
         session['usuario_logado'] = request.form['usuario']
         return redirect('/') #adicionar pagina dashboard
     else:
